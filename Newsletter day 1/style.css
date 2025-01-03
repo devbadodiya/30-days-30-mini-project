@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.botton{
+    position: relative;
+    padding: 15px 20px ;
+    font-size: 1.5rem;
+    background-color: black;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.5s;
+
+}
+
+.botton:hover{
+    letter-spacing: 0.1rem;
+
+}
+
+#newsletter{
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    background-color: rgb(245, 245, 245);
+    z-index: 1000;
+    width: 450px;
+    padding: 80px 50px 50px ;
+    transition: 0.5s;
+    border-radius: 4px;
+    visibility: hidden; 
+
+
+}
+#newsletter.active{
+    visibility: visible;
+    top: 50%;
+}
+
+#newsletter h2{
+    text-align: center;
+    font-family: serif;
+    color: burlywood;
+    font-size: 24px;
+    margin: 20px 10px;
+}
+#newsletter p{
+    text-align: center;
+    font-family: serif;
+    color: burlywood;
+  
+}
+#newsletter .box{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input , button{
+    width: 100%;
+    border: 1px solid black;
+    padding: 15px;
+    outline: none;
+    font-size: 1rem;
+    font-family: serif;
+}
+button{
+    border: none;
+    width: 150px;
+    letter-spacing: 0.1rem;
+    background-color: burlywood;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.close{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 20px;
+}

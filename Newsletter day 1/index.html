@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Letter popup</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <a class="botton" onclick="toggleNewsLetter()"> Join us</a>
+    <div class="hidden" id="newsletter">
+        <h2>Join our newsletter for regular update</h2>
+        <p>Welcome to the website while click on join us you wil able to get daily news on
+            your email.
+        </p>
+            <div class="box">
+            <input type="email" placeholder="Enter your email">
+            </div>
+            <div class="box">
+            <button type="submit">Sign Up</button>
+            </div>
+    <a class="close" onclick="toggleNewsLetter()"> 
+        
+       <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+    </a>
+ 
+    <script src="index.js"></script>
+  </body>
+</html>
